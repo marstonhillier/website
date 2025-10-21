@@ -1,175 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haem NUH Guidelines</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background-color: #f9fafb;
-      color: #111827;
-      margin: 0;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.25rem;
-    }
-    h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.25rem;
-      margin-top: 2rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      background: #fff;
-      margin: 0.5rem 0;
-      padding: 0.75rem 1rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    p.description {
-      margin: 0.25rem 0 0;
-      font-size: 0.95rem;
-      color: #374151;
-    }
-    #search-container {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    #search {
-      padding: 0.75rem;
-      width: 80%;
-      max-width: 400px;
-      border: 1px solid #d1d5db;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 3rem;
-      color: #6b7280;
-    }
-    .hidden {
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>NUH  Clinical Guidelines</h1>
-    <p>Quick access to local guideline PDFs</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haem NUH Guidelines</title>
+    <style>
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 900px;
+  line-height: 1.5;
+}
 
-  <div id="search-container">
-    <input
-      type="text"
-      id="search"
-      placeholder="Search for a guideline or keyword..."
-      aria-label="Search guidelines"
-    />
-  </div>
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-  <main id="guidelines">
-    <!-- ===================== THROMBOSIS ===================== -->
-    <section id="thrombosis">
-      <h2>Thrombosis</h2>
-      <ul>
-        <li><a href="/documents/2783 - Bleeding Emergency Reference.pdf" target="_blank">Bleeding on anticoagulation/antiplatelet Reference</a></li>
-        <li><a href="/documents/3059 - Warfarin (Initiation, Restart, Restart after Bleeding, Discharge).pdf" target="_blank">Warfarin – Initiation, Restart, Restart after Bleeding, Discharge</a></li>
-        <li><a href="/documents/2401 - Warfarin (Reversal, Emergency).pdf" target="_blank">Warfarin – Reversal, Emergency</a></li>
-        <li><a href="/documents/2841 - Antiplatelets (Elective Surgery).pdf" target="_blank">Antiplatelets (Elective Surgery)</a></li>
-        <li><a href="/documents/2785 - DOAC (Reversal, Emergency).pdf" target="_blank">DOAC – Reversal, Emergency</a></li>
-        <li><a href="/documents/2782 - DOAC (Elective Surgery).pdf" target="_blank">DOAC (Elective Surgery)</a></li>
-        <li><a href="/documents/2402 - Superficial Thrombophlebitis.pdf" target="_blank">Superficial Thrombophlebitis</a></li>
-        <li><a href="/documents/2786 - Pulmonary Embolism.pdf" target="_blank">Pulmonary Embolism</a></li>
-        <li><a href="/documents/1096 - PE in Pregnancy.pdf" target="_blank">Pulmonary Embolism in Pregnancy</a></li>
-        <li><a href="/documents/3343 - Cancer Associated Thrombosis.pdf" target="_blank">Cancer Associated Thrombosis</a></li>
-        <li><a href="/documents/3243 - Surgical Extended Thromboprophylaxis.pdf" target="_blank">Surgical Extended Thromboprophylaxis</a></li>
-        <li><a href="/documents/2248 - Enoxaparin Dosage.pdf" target="_blank">Enoxaparin Dosage</a></li>
-        <li><a href="/documents/2409 - Sickle Cell Disease (Acute Management).pdf" target="_blank">Sickle Cell Disease – Acute Management</a></li>
-      </ul>
-    </section>
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
 
-    <!-- ===================== HAEMOSTASIS ===================== -->
-    <section id="haemostasis">
-      <h2>Haemostasis</h2>
-      <ul>
-        <li><a href="/documents/NUH TEG Algorithm V1.1.pdf" target="_blank">NUH TEG Algorithm V1.1</a></li>
-        <li><a href="/documents/2330 - Transfusion Guideline.pdf" target="_blank">Transfusion Guideline</a></li>
-      </ul>
-    </section>
+h2 {
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
 
-    <!-- ===================== MALIGNANT ===================== -->
-    <section id="malignant">
-      <h2>Malignant</h2>
-      <ul>
-        <li><a href="/documents/1879 - Tumour Lysis Syndrome.pdf" target="_blank">Tumour Lysis Syndrome</a></li>
-        <li><a href="/documents/2370 - New Paraprotein.pdf" target="_blank">New Paraprotein</a></li>
-        <li><a href="/documents/3278 - New Lymphocytosis.pdf" target="_blank">New Lymphocytosis</a></li>
-        <li><a href="/documents/3388 - SFLC Interpretation.pdf" target="_blank">Serum Free Light Chain Interpretation</a></li>
-        <li><a href="/documents/3386 - HD MTX.pdf" target="_blank">High-Dose Methotrexate (HD MTX)</a></li>
-      </ul>
-    </section>
+h3 {
+  font-size: 1.05rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
 
-    <!-- ===================== TRANSPLANT ===================== -->
-    <section id="transplant">
-      <h2>Transplant</h2>
-      <ul>
-        <li><a href="/documents/PRB76 Clinical Adverse Events to Chimeric Antigen Receptor T-cell therapy (CAR-T-cells).pdf" target="_blank">CAR-T Adverse Event Management including CRS</a></li>
-        <li><a href="/documents/PRB86 Screening, Pre-emptive Therapy and Treatment of Viral Infections.pdf" target="_blank">Viral Infection Screening and Treatment (Post-BMT)</a></li>
-        <li><a href="/documents/PRB44 Guideline for the Diagnosis and Management of VOD.pdf" target="_blank">VOD (Veno-Occlusive Disease) Management</a></li>
-        <li><a href="/documents/PRB45 Guideline for the Management of Haemorrhagic Cystitis.pdf" target="_blank">Haemorrhagic Cystitis Management</a></li>
-        <li><a href="/documents/PRB66 (v3.1) Guideline for management of mucositis post-BMT.pdf" target="_blank">Post-BMT Mucositis Management</a></li>
-        <li><a href="/documents/1865 - Neutropenic Prophylaxis.pdf" target="_blank">Neutropenic Prophylaxis</a></li>
-        <li><a href="/documents/1866 - Neutropenic Sepsis.pdf" target="_blank">Neutropenic Sepsis</a></li>
-        <li><a href="/documents/2748 - Electrolyte Replacement.pdf" target="_blank">Electrolyte Replacement</a></li>
-        <li><a href="/documents/1851 - GCSF Dosing.pdf" target="_blank">GCSF Dosing</a></li>
-        <li><a href="/documents/1863 - Antifungal Guidelines.pdf" target="_blank">Antifungal Guidelines</a></li>
-      </ul>
-    </section>
-  </main>
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.25rem 0;
+}
 
-  <footer>
-    &copy; Guidelines retrieved 21/10/2025
-  </footer>
+li {
+  background: #fff;
+  margin: 0.3rem 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
 
-  <script>
-    const searchInput = document.getElementById('search');
-    const guidelineItems = document.querySelectorAll('#guidelines li');
-    const sections = document.querySelectorAll('#guidelines section');
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
 
-    searchInput.addEventListener('input', () => {
-      const query = searchInput.value.toLowerCase();
-      guidelineItems.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        item.classList.toggle('hidden', !text.includes(query));
+a:hover {
+  text-decoration: underline;
+}
+
+p.description {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+#search-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#search {
+  padding: 0.5rem;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #d1d5db;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  color: #6b7280;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Responsive tweaks ===== */
+@media (min-width: 768px) {
+  body {
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>NUH Clinical Guidelines</h1>
+      <p>Quick access to local guideline PDFs</p>
+    </header>
+
+    <div id="search-container">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search for a guideline or keyword..."
+        aria-label="Search guidelines"
+      />
+    </div>
+
+    <main id="guidelines">
+      <!-- ===================== THROMBOSIS ===================== -->
+      <section id="thrombosis">
+        <h2>Thrombosis</h2>
+        <ul>
+          <li><a href="/documents/2402 - Superficial Thrombophlebitis.pdf" target="_blank">Superficial Thrombophlebitis</a></li>
+          <li><a href="/documents/2786 - Pulmonary Embolism.pdf" target="_blank">Pulmonary Embolism</a></li>
+          <li><a href="/documents/1096 - PE in Pregnancy.pdf" target="_blank">Pulmonary Embolism in Pregnancy</a></li>
+          <li><a href="/documents/3343 - Cancer Associated Thrombosis.pdf" target="_blank">Cancer Associated Thrombosis</a></li>
+          <li><a href="/documents/3243 - Surgical Extended Thromboprophylaxis.pdf" target="_blank">Surgical Extended Thromboprophylaxis</a></li>
+          <li><a href="/documents/2248 - Enoxaparin Dosage.pdf" target="_blank">Enoxaparin Dosage</a></li>
+          <li><a href="/documents/2409 - Sickle Cell Disease (Acute Management).pdf" target="_blank">Sickle Cell Disease – Acute Management</a></li>
+        </ul>
+
+        <h3>Bleeding</h3>
+        <ul>
+          <li><a href="/documents/2783 - Bleeding Emergency Reference.pdf" target="_blank">Bleeding on Anticoagulation/Antiplatelet Reference</a></li>
+        </ul>
+
+        <h3>DOACs</h3>
+        <ul>
+          <li><a href="/documents/2785 - DOAC (Reversal, Emergency).pdf" target="_blank">DOAC – Reversal, Emergency</a></li>
+          <li><a href="/documents/2782 - DOAC (Elective Surgery).pdf" target="_blank">DOAC (Elective Surgery)</a></li>
+        </ul>
+
+        <h3>Warfarin</h3>
+        <ul>
+          <li><a href="/documents/3059 - Warfarin (Initiation, Restart, Restart after Bleeding, Discharge).pdf" target="_blank">Warfarin – Initiation, Restart, Restart after Bleeding, Discharge</a></li>
+          <li><a href="/documents/2401 - Warfarin (Reversal, Emergency).pdf" target="_blank">Warfarin – Reversal, Emergency</a></li>
+        </ul>
+
+        <h3>Antiplatelets</h3>
+        <ul>
+          <li><a href="/documents/2841 - Antiplatelets (Elective Surgery).pdf" target="_blank">Antiplatelets (Elective Surgery)</a></li>
+        </ul>
+      </section>
+
+      <!-- ===================== HAEMOSTASIS ===================== -->
+      <section id="haemostasis">
+        <h2>Haemostasis</h2>
+        <ul>
+          <li><a href="/documents/NUH TEG Algorithm V1.1.pdf" target="_blank">NUH TEG Algorithm V1.1</a></li>
+          <li><a href="/documents/2330 - Transfusion Guideline.pdf" target="_blank">Transfusion Guideline</a></li>
+        </ul>
+      </section>
+
+      <!-- ===================== MALIGNANT ===================== -->
+      <section id="malignant">
+        <h2>Malignant</h2>
+        <ul>
+          <li><a href="/documents/1879 - Tumour Lysis Syndrome.pdf" target="_blank">Tumour Lysis Syndrome</a></li>
+          <li><a href="/documents/2370 - New Paraprotein.pdf" target="_blank">New Paraprotein</a></li>
+          <li><a href="/documents/3278 - New Lymphocytosis.pdf" target="_blank">New Lymphocytosis</a></li>
+          <li><a href="/documents/3388 - SFLC Interpretation.pdf" target="_blank">Serum Free Light Chain Interpretation</a></li>
+          <li><a href="/documents/3386 - HD MTX.pdf" target="_blank">High-Dose Methotrexate (HD MTX)</a></li>
+        </ul>
+      </section>
+
+      <!-- ===================== TRANSPLANT ===================== -->
+      <section id="transplant">
+        <h2>Transplant</h2>
+        <ul>
+          <li><a href="/documents/PRB76 Clinical Adverse Events to Chimeric Antigen Receptor T-cell therapy (CAR-T-cells).pdf" target="_blank">CAR-T Adverse Event Management including CRS</a></li>
+          <li><a href="/documents/PRB86 Screening, Pre-emptive Therapy and Treatment of Viral Infections.pdf" target="_blank">Viral Infection Screening and Treatment (Post-BMT)</a></li>
+          <li><a href="/documents/PRB44 Guideline for the Diagnosis and Management of VOD.pdf" target="_blank">VOD (Veno-Occlusive Disease) Management</a></li>
+          <li><a href="/documents/PRB45 Guideline for the Management of Haemorrhagic Cystitis.pdf" target="_blank">Haemorrhagic Cystitis Management</a></li>
+          <li><a href="/documents/PRB66 (v3.1) Guideline for management of mucositis post-BMT.pdf" target="_blank">Post-BMT Mucositis Management</a></li>
+          <li><a href="/documents/1865 - Neutropenic Prophylaxis.pdf" target="_blank">Neutropenic Prophylaxis</a></li>
+          <li><a href="/documents/1866 - Neutropenic Sepsis.pdf" target="_blank">Neutropenic Sepsis</a></li>
+          <li><a href="/documents/2748 - Electrolyte Replacement.pdf" target="_blank">Electrolyte Replacement</a></li>
+          <li><a href="/documents/1851 - GCSF Dosing.pdf" target="_blank">GCSF Dosing</a></li>
+          <li><a href="/documents/1863 - Antifungal Guidelines.pdf" target="_blank">Antifungal Guidelines</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      &copy; Guidelines retrieved 21/10/2025
+    </footer>
+
+    <script>
+      const searchInput = document.getElementById('search');
+      const guidelineItems = document.querySelectorAll('#guidelines li');
+      const sections = document.querySelectorAll('#guidelines section');
+
+      searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+
+        guidelineItems.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          item.classList.toggle('hidden', !text.includes(query));
+        });
+
+        // Hide section headings if no visible items
+        sections.forEach((section) => {
+          const visibleItems = section.querySelectorAll('li:not(.hidden)').length;
+          section.classList.toggle('hidden', visibleItems === 0);
+        });
       });
-
-      // Hide section headings if no visible items
-      sections.forEach(section => {
-        const visibleItems = section.querySelectorAll('li:not(.hidden)').length;
-        section.classList.toggle('hidden', visibleItems === 0);
-      });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

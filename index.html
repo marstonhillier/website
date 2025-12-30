@@ -1,17 +1,85 @@
-
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    	<title>Marston Hillier's Website</title>
-	<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/water.min.css'>
-	  <link rel="icon" href="/favicon.ico">
-    	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6585943474559117"
-     crossorigin="anonymous"></script>
-  </head>
-  <body>
-	  <p>Hi! I'm Marston.</p>
-	  <p>You should check out my <a href="https://twitter.com/MarstonHillier" target="_blank">Twitter</a></p>
-	  <p>Alternatively, check out MedGEMS <a href="https://medgems.marstonhillier.com">here.</a></p>
-  </body>
+<html lang="en">
+<head>
+  <!-- Core meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Marston Hillier</title>
+  <meta name="description" content="Personal website of Marston Hillier. Developer, builder, and internet person.">
+
+  <!-- SEO / Social -->
+  <meta property="og:title" content="Marston Hillier">
+  <meta property="og:description" content="Personal website of Marston Hillier. Developer, builder, and internet person.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marstonhillier.com">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Marston Hillier">
+  <meta name="twitter:description" content="Personal website of Marston Hillier.">
+
+  <!-- Preconnect for faster CSS fetch -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <!-- Styles -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+  >
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Google AdSense (async, does not block render) -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6585943474559117"
+    crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Marston Hillier</h1>
+      <p>Developer. Builder. Internet person.</p>
+    </header>
+
+    <section>
+      <p>
+        Hi! I’m Marston. This is my little corner of the internet.
+      </p>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <a
+            href="https://twitter.com/MarstonHillier"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://medgems.marstonhillier.com">
+            MedGEMS
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Marston Hillier</p>
+    </footer>
+  </main>
+
+  <!-- Tiny JS, deferred until after render -->
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
 </html>

@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discharge Summary Generator</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+  <style>
+    textarea {
+      min-height: 260px;
+      font-family: monospace;
+    }
+
+    section {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Discharge Summary Generator</h1>
+
+  <!-- Core transplant info -->
+  <section>
+    <h2>Transplant Details</h2>
+
+    <label>
+      Transplant Type
+      <input type="text" id="transplantType" placeholder="e.g. Renal transplant">
+    </label>
+
+    <label>
+      Date of Transplant
+      <input type="date" id="transplantDate">
+    </label>
+  </section>
+
+  <!-- Admission 1 -->
+  <section>
+    <h2>Admission 1 – Transplant Admission</h2>
+
+    <label>
+      Discharge Summary
+      <textarea id="summaryAdmission1" readonly></textarea>
+    </label>
+  </section>
+
+  <!-- Admission 2 -->
+  <section>
+    <h2>Admission 2 – Subsequent Admission</h2>
+
+    <label>
+      Reason for Admission
+      <input type="text" id="admission2Reason" placeholder="e.g. AKI, infection">
+    </label>
+
+    <label>
+      Admission Date
+      <input type="date" id="admission2Date">
+    </label>
+
+    <label>
+      Discharge Summary
+      <textarea id="summaryAdmission2" readonly></textarea>
+    </label>
+  </section>
+
+  <script>
+    const transplantTypeInput = document.getElementById("transplantType");
+    const transplantDateInput = document.getElementById("transplantDate");
+
+    const admission2ReasonInput = document.getElementById("admission2Reason");
+    const admission2DateInput = document.getElementById("admission2Date");
+
+    const summary1 = document.getElementById("summaryAdmission1");
+    const summary2 = document.getElementById("summaryAdmission2");
+
+    function formatDate(dateValue) {
+      return dateValue
+        ? new Date(dateValue).toLocaleDateString("en-GB")
+        : "[DATE]";
+    }
+
+    function generateAdmission1() {
+      const transplantType = transplantTypeInput.value || "[TRANSPLANT TYPE]";
+      const transplantDate = formatDate(transplantDateInput.value);
+
+      summary1.value = `
+ADMISSION 1: TRANSPLANT ADMISSION
+
+The patient underwent a ${transplantType} on ${transplantDate}.
+
+The post-operative course was uncomplicated.
+Graft function improved appropriately.
+The patient was clinically stable at discharge.
+
+Follow-up:
+- Transplant clinic
+- Routine blood monitoring
+      `.trim();
+    }
+
+    function generateAdmission2() {
+      const transplantType = transplantTypeInput.value || "[TRANSPLANT TYPE]";
+      const reason = admission2ReasonInput.value || "[REASON FOR ADMISSION]";
+      const admissionDate = formatDate(admission2DateInput.value);
+
+      summary2.value = `
+ADMISSION 2: SUBSEQUENT ADMISSION
+
+The patient, status post ${transplantType}, was re-admitted on ${admissionDate}
+with ${reason}.
+
+Investigations and management were carried out as per protocol.
+The patient improved clinically and was deemed fit for discharge.
+
+Follow-up:
+- As per transplant team recommendations
+      `.trim();
+    }
+
+    function generateAll() {
+      generateAdmission1();
+      generateAdmission2();
+    }
+
+    transplantTypeInput.addEventListener("input", generateAll);
+    transplantDateInput.addEventListener("input", generateAll);
+    admission2ReasonInput.addEventListener("input", generateAll);
+    admission2DateInput.addEventListener("input", generateAll);
+
+    // Initialise
+    generateAll();
+  </script>
+
+</body>
+</html>

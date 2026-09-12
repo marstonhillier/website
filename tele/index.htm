@@ -502,4 +502,76 @@
                     <div class="numbers">
                         <a href="tel:01159691169,79400" class="btn">79400</a>
                         <a href="tel:01159691169,75645" class="btn">75645</a>
-                        <a href="tel:0115969
+                        <a href="tel:01159691169,79401" class="btn">79401</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label">Control room</span>
+                    <div class="numbers"><a href="tel:01159691169,75644" class="btn">75644</a></div>
+                </div>
+                <div class="row">
+                    <span class="label">MRI</span>
+                    <div class="numbers">
+                        <a href="tel:01159691169,71720" class="btn">71720</a>
+                        <a href="tel:01159691169,73442" class="btn">73442</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label">USS</span>
+                    <div class="numbers"><a href="tel:01159691169,76701" class="btn">76701</a></div>
+                </div>
+                <div class="row">
+                    <span class="label">IR - Room 6</span>
+                    <div class="numbers"><a href="tel:01159691169,79779" class="btn">79779</a></div>
+                </div>
+                <div class="row">
+                    <span class="label">Bronch</span>
+                    <div class="numbers"><a href="tel:01159691169,71129" class="btn">71129</a></div>
+                </div>
+                <div class="row">
+                    <span class="label">PET</span>
+                    <div class="numbers"><a href="tel:01159691169,79874" class="btn">79874</a></div>
+                </div>
+                <div class="row">
+                    <span class="label">Endoscopy</span>
+                    <div class="numbers"><a href="tel:01159691169,76177" class="btn">76177</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-header">On Call & CNS</h2>
+            
+            <div class="group simple-list">
+                <div class="row">
+                    <span class="label">Fellow Office</span>
+                    <div class="numbers"><a href="tel:01159691169,75555" class="btn">75555</a></div>
+                </div>
+                <div class="row">
+                    <span class="label">QMC SpR desk</span>
+                    <div class="numbers"><a href="tel:01159691169,87250" class="btn">87250</a></div>
+                </div>
+                <div class="row">
+                    <span class="label">NUH On Call SpR</span>
+                    <div class="numbers"><a href="tel:07812268940" class="btn">07812 268 940</a></div>
+                </div>
+                <div class="row">
+                    <span class="label">QMC On Call SpR</span>
+                    <div class="numbers"><a href="tel:07812275348" class="btn">07812 275 348</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.group-title').forEach(header => {
+            header.addEventListener('click', () => {
+                if (window.innerWidth < 768) {
+                    const group = header.parentElement;
+                    group.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
